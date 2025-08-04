@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcs - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            border: 1px solid black;
+
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container img {
+            height: 60px;
+            width: auto;
+            /* Placeholder for logo */
+            background-color: #007bff;
+            border-radius: 8px;
+            display: block;
+        }
+        
+        .mirror {
+            text-align: right;
+        }
+        
+        .mirror b {
+            color: #333;
+            font-size: 16px;
+        }
+        
+        .mirror div {
+            margin: 5px 0;
+        }
+        
+        .mirror a {
+            color: #666;
+            text-decoration: none;
+            font-style: italic;
+        }
+        
+        .mirror a:hover {
+            color: #007bff;
+        }
+        
+        .menu {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            padding: 0;
+        }
+        
+        .menu div {
+            display: inline-block;
+            border-right: 1px solid #ddd;
+        }
+        
+        .menu div:last-child {
+            border-right: none;
+        }
+        
+        .menu a {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.2s ease;
+        }
+        
+        .menu a:hover {
+            background-color: #e9ecef;
+        }
+        
+        .menu img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            /* Icon placeholders */
+            border-radius: 3px;
+            display: inline-block;
+        }
+        
+        
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background-color: grey;
+            color: white;
+            min-height: 500px;
+            border: 2px solid black;
+
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .mirror {
+                margin-top: 15px;
+                text-align: center;
+            }
+            
+            .menu {
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .menu div {
+                display: inline-block;
+            }
+        }
+    </style>
+
+<style>
+p {
+  border: 2px solid black;
+  margin: 50px;
+}
+button {
+  padding: 10px 10px;
+  font-size: 16px;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="MarcsLogo"/>
+            
+            <div class="mirror">
+                <b>MARCS :</b>
+                <div><a href="https://www.erda.dk/" target="_blank"><i>Mirror Montpellier</i></a></div>
+                <div><a href="https://www.erda.dk/" target="_blank"><i>Mirror Uppsala</i></a></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div><a href="https://github.com/ThomasSchioler"><img src="star.png" alt="Star"/>Marcs Homepage</a></div>
+            <div><a href="https://github.com/ThomasSchioler"><img src="megaphone.png" alt="Megaphone"/>News</a></div>
+            <div><a href="https://github.com/ThomasSchioler"><img src="book.png" alt="Book"/>Documentation</a></div>
+            <div><a href="https://github.com/ThomasSchioler"><img src="computer.png" alt="Computer"/>Software</a></div>
+            <div><a href="https://github.com/ThomasSchioler"><img src="search.png" alt="Magnifying"/>Search Marcs</a></div>
+            <div><a href="https://www.linkedin.com/in/thomas-schi%C3%B8ler-8528b821b/"><img src="email.png" alt="email"/>Contact Us</a></div>
+        </div>
+    </header>
+    <div class="content">
+        <!-- Your content goes here -->
+        <div style="text-align: center;">
+        <h1>Example of a grid of stellar model atmospheres</h1>
+        <p>This button go to the welcome.txt from erda.</p>
+        <button><a href="https://sid.erda.dk/share_redirect/F7JaDXZYEW">Welcome.txt</a></button>
+        
+        
+        <p>This button download the none compressed flx_wavelengths.vac.gz file from https://marcs.oreme.org/ (file size = 1.4 Mb).</p>
+        <button><a href="https://sid.erda.dk/share_redirect/bjSAKr7WJZ" >flx_wavelengths.txt</a></button>
+        <h3>The bars (Marcs homepage, News, Documentation, Software, Search March), will lead to my github https://github.com/ThomasSchioler</h3>
+        <h4>The Contact us will lead to my linked in https://www.linkedin.com/in/thomas-schi%C3%B8ler-8528b821b/</h4>
+        <h3>The Mirror Montpellier and Mirror Uppsala will lead to https://www.erda.dk/ </h3>
+    </div>
+    
+    
+</body>
+</html>
